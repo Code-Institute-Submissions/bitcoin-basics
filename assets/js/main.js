@@ -128,7 +128,7 @@ function newsApi() {
             return res.json()
         })
         .then((data => {
-            //console.log(data);
+            console.log(data);
             data.data.forEach(data => {
                 let li = document.createElement('li');
                 let a = document.createElement('a');
@@ -159,7 +159,7 @@ function newsApi() {
         btcNews.appendChild(li);
     }
 }
-
+newsApi();
 
 /*-------------------------Chart---------------------------*/
 
