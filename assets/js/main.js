@@ -31,7 +31,7 @@ function fillArray(currency) {
     })
 
 }
-document.getElementById("coinPriceTable").innerHTML = "";
+
 currencies.forEach((checkedCurrencies) => {
 
     fillArray(checkedCurrencies);
@@ -51,21 +51,14 @@ $(document).ready(function () {
 
             checkedCurrencies.push($(this).val());
 
+
         });
-        console.log(checkedCurrencies);
+        checkedCurrencies.forEach((currency) => {
+
+            fetchApi(currency);
+            //console.log(fillArray(currency));
+        });
     });
-});
-
-
-/*-------------------------Reset Table Button---------------------------*/
-
-$(document).ready(function () {
-    $("#clearButton").click(function () {
-        $(".currencyCheck").prop("checked", false);
-
-
-    });
-
 });
 
 
@@ -90,10 +83,20 @@ function fetchApi(currency) {
         });
 }
 
-currencies.forEach((currency) => {
+/*currencies.forEach((currency) => {
     fetchApi(currency);
-});
+});*/
 
+/*-------------------------Reset Table Button---------------------------*/
+
+$(document).ready(function () {
+    $("#clearButton").click(function () {
+        $(".currencyCheck").prop("checked", false);
+        document.getElementById("coinPriceTable").innerHTML = "";
+
+    });
+
+});
 
 
 /*-------------------------Navbar---------------------------*/
