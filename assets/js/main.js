@@ -162,49 +162,37 @@ function newsApi() {
 const xAxis = [];
 const yRates = [];
 
-chartBitcoin();
+function chartBitcoin(data) {
 
-function chartBitcoin() {
-    fetchHist();
     const ctx = document.getElementById('histData').getContext('2d');
-
     const chart = new Chart(ctx, {
         type: 'line',
-
-        // The data for our dataset
         data: {
             labels: xAxis,
-            datasets: [{
-                fill: false,
-                label: 'Bitcoin Rates For The Previous 31 Days',
-                borderColor: 'rgb(255,153,0)',
-                data: yRates,
 
+            datasets: [{
+                label: 'Bitcoin Rates For The Previous 31 Days',
+
+                data: yRates,
+                fill: false,
+
+                borderColor: 'rgb(255,153,0)',
             }]
         },
-
-        // Configuration options go here
-        options: {}
     });
 }
 
 
-
-
-
-
 function fetchHist() {
+
     fetch('https://api.coindesk.com/v1/bpi/historical/close.json').then(response => {
-            //console.log(response);
             if (!status == 200) {
                 console.error("ERROR");
             }
             return response.json();
         }).then(function (data) {
-            //console.log(data);
             bitArray = data.bpi;
             let bitString = JSON.stringify(bitArray);
-            //console.log(bitString);
             let bitItem = bitString.split(',');
             bitItem.forEach(itemObj => {
                 const bpiItem = itemObj.split(':');
@@ -214,11 +202,10 @@ function fetchHist() {
                 yRates.push(rate);
                 console.log(date, rate);
             });
-
-
+            chartBitcoin(data);
         })
-
         .catch(error => {
             console.log(error);
         });
 }
+fetchHist();
