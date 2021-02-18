@@ -83,9 +83,6 @@ function fetchApi(currency) {
         });
 }
 
-/*currencies.forEach((currency) => {
-    fetchApi(currency);
-});*/
 
 /*-------------------------Reset Table Button---------------------------*/
 
@@ -99,9 +96,10 @@ $(document).ready(function () {
 });
 
 
-/*-------------------------Navbar---------------------------*/
+/*-------------------------Navbar BitPrice---------------------------*/
+let bPrice = document.getElementById("bitNavPrice");
 
-/*function bitNav() {
+function navbarPrice() {
     fetch('https://api.coindesk.com/v1/bpi/currentprice/BTC.json').then(response => {
             //console.log(response);
             if (!status == 200) {
@@ -109,14 +107,17 @@ $(document).ready(function () {
             }
             return response.json();
         }).then(data => {
-            //console.log(data.bpi.USD.code);
-            //$(tableBody).append(`<tr><td>${data.bpi[`${currency}`].code}</td><td>${data.bpi[`${currency}`].description}</td><td>${data.bpi[`${currency}`].rate}</td></tr>`);
+            //console.log(data.bpi.USD.rate);
+            $(`<a><div>${data.bpi.USD.code}:${data.bpi.USD.rate}</div></a>`);
 
         })
         .catch(error => {
             console.log(error);
         });
-}*/
+
+}
+//console.log(navbarPrice());
+
 
 /*-------------------------News---------------------------*/
 const btcNews = document.getElementById("newsArticle");
@@ -125,6 +126,10 @@ function newsApi() {
 
     fetch('https://data.messari.io/api/v1/news/btc')
         .then((res) => {
+            //console.log(res);
+            if (!status == 200) {
+                console.error("ERROR");
+            }
             return res.json()
         })
         .then((data => {
@@ -139,48 +144,81 @@ function newsApi() {
                 newsContent(li);
             })
 
-
-            /*for (let i = 0; i < response.length; i++) {
-            document.getElementById("newsItem").innerHTML +=
-                $(newsItem).append(`<div>
-                                        <h5>${response.data[i].title}</h5>
-                                            <p>${response.data[i].content}</p>
-                                            <p>
-                                            <small>${response.data[i].published_at}${response.data[i].author.name}
-                                                <a href=${response.data[i].url}target='_blank'></a>
-                                            </small>
-                                            </p>
-                                    </div>`);*/
-            //}
-
         }))
 
     function newsContent(li) {
         btcNews.appendChild(li);
     }
-}
-newsApi();
 
+    newsApi();
+}
 /*-------------------------Chart---------------------------*/
 
+//Historical data from:https://api.coindesk.com/v1/bpi/historical/close.json Powered by CoinDesk:https://www.coindesk.com/price/bitcoin,
+//Chart JS Tutorial info from Excellence in Excel:https://www.youtube.com/watch?v=4jfcxxTT8H0
+//Chart JS Tutorial info from Arslan:https://www.youtube.com/watch?v=mlSKLmG80Us&t=259s
+//Api Powered by CoinDesk:https://www.coindesk.com/price/bitcoin
 
-/*var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
+const xAxis = [];
+const yRates = [];
 
-    // The data for our dataset
-    data: {
-        labels: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'],
-        datasets: [{
-            label: 'Historical Data',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45]
-        }]
-    },
+chartBitcoin();
 
-    // Configuration options go here
-    options: {}
-});
-*/
+function chartBitcoin() {
+    fetchHist();
+    const ctx = document.getElementById('histData').getContext('2d');
+
+    const chart = new Chart(ctx, {
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: xAxis,
+            datasets: [{
+                fill: false,
+                label: 'Bitcoin Rates For The Previous 31 Days',
+                borderColor: 'rgb(255,153,0)',
+                data: yRates,
+
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+}
+
+
+
+
+
+
+function fetchHist() {
+    fetch('https://api.coindesk.com/v1/bpi/historical/close.json').then(response => {
+            //console.log(response);
+            if (!status == 200) {
+                console.error("ERROR");
+            }
+            return response.json();
+        }).then(function (data) {
+            //console.log(data);
+            bitArray = data.bpi;
+            let bitString = JSON.stringify(bitArray);
+            //console.log(bitString);
+            let bitItem = bitString.split(',');
+            bitItem.forEach(itemObj => {
+                const bpiItem = itemObj.split(':');
+                const date = bpiItem[0];
+                xAxis.push(date);
+                const rate = bpiItem[1];
+                yRates.push(rate);
+                console.log(date, rate);
+            });
+
+
+        })
+
+        .catch(error => {
+            console.log(error);
+        });
+}
