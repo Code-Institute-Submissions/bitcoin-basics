@@ -20,92 +20,89 @@
     </script>
 </head>
 
-<body>
-
-    <section class="container-fluid">
-        <div class="container">
-            <form onsubmit="return sendMail(this);" id="emailForm" class="row g-3 needs-validation" novalidate>
-                <div class="col-sm-12 col-md-4">
-
-                    <input type="text" name="name" class="form-control" id="fromName" value="" required
-                        placeholder="Full Name...">
-                    <div class="valid-feedback"></div>
-                </div>
-
-                <div class="col-sm-12 col-md-12">
-
-                    <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend"></span>
-                        <input type="email" name="emailaddress" class="form-control" id="replyTo"
-                            aria-describedby="inputGroupPrepend" required placeholder="Email Address...">
-                        <div class="invalid-feedback">
-                            Please provide a valid email address.
-                        </div>
-                    </div>
-                </div>
-                <div class="input-group">
-                    <span class="input-group-text"></span>
-                    <textarea rows="5" name="message" class="form-control" aria-label="With textarea"
-                        placeholder="Bitcoin Questions"></textarea>
-                </div>
-                <div class="col-12">
-                    <button id="formButton" type="submit" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalCenter">Sign Up</button>
+<body class="emailsub-body">
+    <div class="container econtainer">
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Ex non beatae iste cupiditate odit ab. Aut repellendus ratione<br>
+                molestiae eaque porro impedit omnis sint laudantium deserunt ipsam?
+            </p>
+        </div>
+        <div class="send">
+            <span class="send-icon"><i class="fas fa-check-circle"></i></span>
+            <span class="send-text">Your message has been sent!</span>
+        </div>
 
 
-                </div>
-            </form>
 
-            <!-- Success Modal -->
 
-            <div class="modal fade" id="emailModalSuccess" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="successLabel">Thank you for contacting Basic
-                                Bitcoin
-                            </h5>
-                        </div>
-                        <div class="modal-body">
-                            <p>Your message has been sent.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
+        <form onsubmit="return sendMail(this);" id="emailForm" class="row g-3 needs-validation" novalidate>
+            <div class="col-sm-12 col-md-4">
+
+                <input type="text" name="name" class="form-control" id="fromName" value="" required
+                    placeholder="Full Name...">
+                <div class="valid-feedback"></div>
+            </div>
+
+            <div class="col-sm-12 col-md-12">
+
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend"></span>
+                    <input type="email" name="emailaddress" class="form-control" id="replyTo"
+                        aria-describedby="inputGroupPrepend" required placeholder="Email Address...">
+                    <div class="invalid-feedback">
+                        Please provide a valid email address.
                     </div>
                 </div>
             </div>
+            <div class="input-group">
+                <span class="input-group-text"></span>
+                <textarea rows="5" name="message" class="form-control" aria-label="With textarea"
+                    placeholder="Bitcoin Questions"></textarea>
+            </div>
+            <div class="col-12">
+                <button id="formButton" type="submit" class="btn btn-primary" data-toggle="modal"
+                    data-target="#exampleModalCenter">Send</button>
+            </div>
+        </form>
 
-            <!-- Error Modal -->
-            <div class="modal fade" id="emailModalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="errorLabel">Thank you for contacting Basic
-                                Bitcoin
-                            </h5>
-                        </div>
-                        <div class="modal-body">
-                            <p>Unfortunately something went wrong and your message did not send.<br>Please try
-                                again. </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
+        <div class="social">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+
+        <!-- Error Modal -->
+        <div class="modal fade" id="emailModalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="errorLabel">Thank you for contacting Basic
+                            Bitcoin
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Unfortunately something went wrong and your message did not send.<br>Please try
+                            again. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+
 
 
 

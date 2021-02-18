@@ -1,17 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 /*----------------------------- Colours ------------------------------*/
 /*------------------- Special Paddings/Margins/Text-------------------*/
+
+
 /*----------------------------- Header -------------------------------*/
+
+
+#navbarSupportedContent .active .nav-link {
+    color: rgb(255, 153, 0);
+}
+
+#navbarSupportedContent .nav-link {
+    color: #000;
+    padding: .6rem .6rem .6rem .6rem;
+    font-size: 14px;
+    transition: .5 all ease;
+
+}
+
+#navButton {
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 0;
+}
+
+.dropdown-menu {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/*------------------- Hover-------------------*/
+
+#navbarSupportedContent .nav-link:hover {
+    color: rgb(255, 153, 0);
+}
+
+.dropdown-item:hover {
+    color: rgb(255, 153, 0);
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(255, 153, 0);
+}
+
+
+
 /*---------------------------- Headings ------------------------------*/
+
+h1 h2 {
+    text-align: center;
+    margin: 50px 0 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 /*------------------------------ Images-------------------------------*/
+
+
 /*------------------------------ Footer ------------------------------*/
 
 /*---------------------- Index HTML -----------------------*/
+
+
 /*------------------ Getting-Started HTML -----------------*/
-/*------------------- Currency-Calc HTML ------------------*/
+.card,
+.card-header {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px;
+}
+
+.card {
+    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .18);
+}
+
+.btn-link {
+    width: 100%;
+    height: 60px;
+    border: none;
+    color: #000 !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    text-decoration: none !important;
+}
+
+.card-body {
+    background: rgba(255, 153, 0, 0.1);
+}
+
+
+
 /*-------------------- Market-Rates HTML ------------------*/
 
 #coin-api-data {
-    border: solid black 1px;
+    border: solid #000 1px;
 }
 
 h1 {
@@ -23,6 +130,37 @@ h1 {
 }
 
 /*---------------------- News HTML ------------------------*/
-/*------------------- Recommended HTML --------------------*/
+/*------------------- Charts HTML --------------------*/
 
 /*-------------------- Email-Sub HTML ---------------------*/
+
+.emailsub-body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.econtainer {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bitcoin-img.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+
+
+
+}
+
+.send-icon {
+    opacity: 0;
+}
+
+.send-text {
+    opacity: 0;
+}
