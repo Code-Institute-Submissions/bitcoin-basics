@@ -21,7 +21,7 @@
 </head>
 
 <body class="e-body">
-    <div class="container subscribe">
+    <div class="subscribe">
         <div class="text">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
@@ -29,22 +29,15 @@
                 molestiae eaque porro impedit omnis sint laudantium deserunt ipsam?
             </p>
         </div>
-        <div class="send">
-
-            <span class="send-text">Your message has been sent!</span>
-        </div>
-
-
-
 
         <form onsubmit="return sendMail(this);" id="emailForm" class="needs-validation" novalidate>
-            <div class="col-md-6 mb-3">
+            <div class="mb-3">
                 <input type="text" name="name" class="form-control" id="fromName" value=""
                     placeholder="Please enter a valid name..." autocomplete="off" required>
                 <div class="invalid-tooltip">Please provide a valid name.</div>
             </div>
 
-            <div class="col-md-6 mb-3">
+            <div class="mb-3">
                 <div class="input-group needs-validation">
                     <span class="input-group-text" id="inputGroupPrepend">@</span>
                     <input type="email" name="emailaddress" class="form-control" id="replyTo"
@@ -55,7 +48,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 mb-3">
+            <div class="mb-3">
                 <textarea rows="5" name="message" class="form-control needs-validation" id="message"
                     placeholder="Send us your feedback/Bitcoin questions..." autocomplete="off" required></textarea>
                 <div class="invalid-tooltip">
@@ -63,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 md-auto mb-3">
+            <div class="mb-3">
                 <button id="formButton" type="submit" class="btn btn-dark">Send</button>
             </div>
         </form>
@@ -122,7 +115,7 @@
 
 
 
-    <footer class="fixed-bottom">
+    <footer class=" container-fluid">
         <div class="social">
             <ul>
                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
