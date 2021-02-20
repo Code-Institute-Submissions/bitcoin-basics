@@ -4,15 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /*----------------------------- Colours ------------------------------*/
 /*------------------- Special Paddings/Margins/Text-------------------*/
-
-
 /*----------------------------- Header -------------------------------*/
-
 
 #navbarSupportedContent .active .nav-link {
     color: rgb(255, 153, 0);
@@ -27,7 +23,7 @@
 }
 
 #formButton,
-#navButton {
+#navButton .pgButtonItem {
     padding: 0;
     margin: 0;
     border-radius: 20px;
@@ -71,6 +67,11 @@
     background: rgb(255, 153, 0);
 }
 
+.pgButtonItem:hover {
+    background: #000;
+    color: rgb(255, 153, 0);
+    ;
+}
 
 /*---------------------------- Headings ------------------------------*/
 
@@ -86,12 +87,21 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /*------------------------------ Images-------------------------------*/
 
 
 /*------------------------------ Footer ------------------------------*/
+footer {
+    text-align: center;
+    overflow: hidden;
+    justify-items: center;
+    padding-top: 0;
+    justify-self: start;
+}
 
+.footer-padding {
+    padding: 60px;
+}
 
 .social ul {
     display: flex;
@@ -99,10 +109,14 @@ h2 {
 }
 
 .social ul li {
-    margin-right: 30px;
     list-style: none;
     font-size: 22px;
-    margin-bottom: 15px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 70px;
 }
 
 .social ul li a {
@@ -112,7 +126,7 @@ h2 {
 .social li a i {
     width: 32px;
     height: 32px;
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 12px 0;
     border-radius: 50%;
     font-size: 13px;
@@ -127,12 +141,64 @@ h2 {
     -o-transition: all 0.35s ease-in-out;
 }
 
-
-
 /*---------------------- Index HTML -----------------------*/
+.content {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
 
+.homeHeader.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.fullLogo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.subheader {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.subheader h1 {
+    text-align: center;
+    margin: .5rem;
+    font-size: 27px;
+}
+
+.subheader h2 {
+    text-align: center;
+    margin: .5rem;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.pgButtonItem {
+    display: block;
+    width: 70%;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    background-color: rgb(255, 153, 0);
+}
+
+.pgButtonItem i {
+    padding-left: 20px;
+}
 
 /*------------------ Getting-Started HTML -----------------*/
+
 .card,
 .card-header {
     background-color: transparent !important;
@@ -159,11 +225,7 @@ h2 {
     background: rgba(255, 153, 0, 0.1);
 }
 
-
-
 /*-------------------- Market-Rates HTML ------------------*/
-
-
 
 #coin-api-data h1 {
     text-align: center;
@@ -180,7 +242,6 @@ h2 {
     justify-content: center;
     display: flex;
     justify-content: center;
-
 }
 
 .table td,
@@ -196,19 +257,13 @@ h2 {
 /*-------------------- Email-Sub HTML ---------------------*/
 
 .e-body {
-
     height: 100vh;
-
     justify-content: center;
     align-items: center;
     background-image: url(../images/transparent-b.png);
-
     background-repeat: no-repeat;
     background-size: cover;
-
     background-position: center center;
-
-
 }
 
 #formButton {
@@ -225,7 +280,6 @@ h2 {
 .form-control .text {
     margin-bottom: 20px;
 }
-
 
 #emailForm,
 .text p {
