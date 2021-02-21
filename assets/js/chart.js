@@ -28,7 +28,6 @@ function chartBitcoin(data) {
     });
 }
 
-
 function fetchHist() {
 
     fetch('https://api.coindesk.com/v1/bpi/historical/close.json').then(response => {
