@@ -182,7 +182,7 @@ footer {
 }
 
 .subheader {
-    margin: 0 auto;
+    margin: 0;
     align-items: center;
 }
 
@@ -368,7 +368,20 @@ footer {
     align-self: center;
     display: block;
     margin: 20px auto;
-    width: 50%;
+    width: 70%;
+    padding-bottom: 0;
+}
+
+.subscribe h1 {
+    text-align: center;
+    margin: .5rem;
+    font-size: 27px;
+}
+
+.subscribe h2 {
+    text-align: center;
+    margin: .5rem;
+    font-size: 17px;
 }
 
 /*-------------------- Media Queries ---------------------*/
