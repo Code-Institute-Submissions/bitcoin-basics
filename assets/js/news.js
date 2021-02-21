@@ -1,4 +1,3 @@
-/*-------------------------News---------------------------*/
 const btcNews = document.getElementById("newsArticle");
 
 function newsApi() {
