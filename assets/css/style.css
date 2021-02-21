@@ -10,6 +10,15 @@
 /*------------------- Special Paddings/Margins/Text-------------------*/
 /*----------------------------- Header -------------------------------*/
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem 3rem;
+}
+
 #navbarSupportedContent .active .nav-link {
     color: rgb(255, 153, 0);
 }
@@ -19,7 +28,6 @@
     padding: .6rem .6rem .6rem .6rem;
     font-size: 14px;
     transition: .5 all ease;
-
 }
 
 #formButton,
@@ -91,6 +99,14 @@ h2 {
 
 /*------------------------------ Images-------------------------------*/
 
+.navbar-brand {
+    width: 70%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
 
 /*------------------------------ Footer ------------------------------*/
 footer {
@@ -262,6 +278,33 @@ footer {
 
 /*---------------------- News HTML ------------------------*/
 /*------------------- Charts HTML --------------------*/
+#graphCanvas.card,
+.card-header {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 38px;
+    margin-top: 38px;
+}
+
+#graphCanvas h2 {
+    text-align: center;
+    margin: .5rem;
+    font-size: 15px;
+}
+
+
+.graphTitle {
+    text-align: center;
+    margin: .5rem;
+    font-size: 27px;
+}
+
+.graphText {
+    text-align: center;
+    margin: .5rem;
+    font-size: 27px;
+}
 
 /*-------------------- Email-Sub HTML ---------------------*/
 
