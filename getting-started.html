@@ -15,12 +15,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/assets/images/favicon_io/site.webmanifest">
 </head>
 
 <body>
+    <!-- Logo and Navbar -->
     <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <a class="navbar-brand" href="#index.html"><img src="/assets/images/bit-basics-logo-sm.png" alt=""></a>
+        <a class="navbar-brand" href="index.html"><img src="/assets/images/bit-basics-logo-sm.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,44 +29,37 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul class="navbar-nav ml-auto hvr-sweep-to-bottom">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="#index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#getting-started.html" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                            class="sr-only">(current)</span>
+                    <a class="nav-link" href="getting-started.html"><span class="sr-only">(current)</span>
                         Get Started
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#market-rates.html">Market Rates</a>
+                    <a class="nav-link" href="market-rates.html">Market Rates</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#charts.html">Charts</a>
+                    <a class="nav-link" href="charts.html">Charts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#news.html">Latest News</a>
+                    <a class="nav-link" href="news.html">Latest News</a>
                 </li>
                 <li class="nav-item">
                     <button id="navButton" class="btn btn-outline-dark btn-sm"><a class="nav-link"
-                            href="#email-sub.html">Contact Us</a></button>
+                            href="email-sub.html">Contact Us</a></button>
                 </li>
             </ul>
 
         </div>
     </nav>
 
-
-    <div class="container">
+    <!-- Information on Bitcoin taken fromAndreas M. Antonopoulos - The bitcoin and open blockchain expert: https://aantonop.com/workshops/introduction-to-bitcoin-and-open-blockchains/ -->
+    <div class="accor-container">
         <h1>Start Here! </h1>
-        <h2>This is your step-by-step beginners guide to Bitcoin...</h2>
+        <h2>A beginners guide to Bitcoin</h2>
 
         <div class="row">
             <div class="col-md-6">
@@ -75,17 +69,26 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Collapsible Group Item #1
+                                    What is Bitcoin?
                                 </button>
                             </h2>
                         </div>
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                Some placeholder content for the first accordion panel. This panel is shown by default,
-                                thanks to the
-                                <code>.show</code> class.
+                            <div class="card-body"><img src="/assets/images/what-is-bitcoin-img.png"
+                                    alt="Image explaining bitcoin and blockchain">
+                                <p> Bitcoin is a purely peer-to-peer version of electronic cash that allows online
+                                    payments to be sent directly from one party to another without going through a
+                                    financial institution. Digital signatures provide part of the solution, but the main
+                                    benefits are lost if a trusted third party is still required to prevent
+                                    double-spending.
+                                    Bitcoin has solved the double-spending problem using a peer-to-peer network. </p>
+
+                                <h5>The Blockchain</h5>
+                                <p>The network timestamps transactions by hashing them into an ongoing chain of
+                                    hash-based proof-of-work, forming a record that cannot be changed without redoing
+                                    the proof-of-work (a block). Multiple blocks are known as a blockchain.</p>
                             </div>
                         </div>
                     </div>
@@ -95,15 +98,32 @@
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    Collapsible Group Item #2
+                                    How do I buy it?
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Some placeholder content for the second accordion panel. This panel is hidden by
-                                default.
+                                <h5>Step 1</h5>
+                                <p>One of the easiest ways to do this is through a cryptocurrency exchange. Create an
+                                    account with an established exchange such as
+                                    <a href="coinfloor.co.uk/autobuy?cf=RM2B98P">Coinfloor(UK)</a> and, after verifying
+                                    your
+                                    identity, you’ll be able to sell your Bitcoin.</p>
+                                <h5>Step 2</h5>
+                                <p>Log into your banking app and use the exchanges deposit details to either set up a
+                                    recurring standing order if the exchange allows, or make a one off
+                                    instant Bitcoin purchase using bank transfers. <a
+                                        href="coinfloor.co.uk/autobuy?cf=RM2B98P">Coinfloor(UK)</a> allows you to make
+                                    recurring payments via standing order so Sit back and watch your bitcoin investment
+                                    grow
+                                </p>
+                                <h5>Step 3</h5>
+                                <p><a href="coinfloor.co.uk/autobuy?cf=RM2B98P">Coinfloor(UK)</a> allows
+                                    you to make recurring payments via standing order so Sit back and watch your bitcoin
+                                    investment grow
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -113,19 +133,74 @@
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    Collapsible Group Item #3
+                                    Where can I buy it?
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                And lastly, the placeholder content for the third and final accordion panel. This panel
-                                is hidden by
-                                default.
+                                Buy Bitcoin from a <a href="coinfloor.co.uk/autobuy?cf=RM2B98P">cryptocurrency
+                                    exchange</a>, which is a website or service which enables
+                                its users to buy, sell,
+                                invest, trade, and store
+                                cryptocurrencies like Bitcoin. Choosing the right exchange is important because you are
+                                trusting them with your money.
                             </div>
                         </div>
                     </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Where do I store it?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                You can download a Bitcoin 'soft' wallet for your mobile or desktop devices, such as the
+                                <a href="https://www.exodus.com/download/">Exodus</a> 'soft' wallet. Alternatively, a
+                                more secure method is to purchase a 'hard' wallet such as <a
+                                    href="https://trezor.io/">Trezor</a>. Wallets allow you to safely store and
+                                spend your Bitcoin, along with other crypto assets.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Where can I find out more about Bitcoin?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                If you want to learn more about Bitcoin, here are some suggested books:
+                                <a href="https://aantonop.com/product/the-internet-of-money-volume-1-english/"><img
+                                        src="/assets/images/book 1.png"
+                                        alt="Image of The Internet Of Money Book Volume 1"> </a>
+                                <a href="https://aantonop.com/product/the-internet-of-money-volume-2-english/"><img
+                                        src="/assets/images/book 2.png"
+                                        alt="Image of The Internet Of Money Book Volume 2"> </a>
+                                <a href="https://aantonop.com/product/the-internet-of-money-volume-3-english-ebook/"><img
+                                        src="/assets/images/book 3.png"
+                                        alt="Image of The Internet Of Money Book Volume 3"> </a>
+                                <a href="https://saifedean.com/"><img src="/assets/images/book 4.png"
+                                        alt="Image of The Bitcoin Standard"></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -135,19 +210,19 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid">
+    <!-- Footer -->
+    <footer class=" container-fluid">
         <div class="social">
             <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li></li>
+                <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
             </ul>
-
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
