@@ -1,10 +1,7 @@
 let tableBody = document.getElementById("coinPriceTable");
 let currencyListCodes = document.getElementById("currencyList")
 
-
-
 const currencies = ["AUD", "CNY", "EUR", "GBP", "INR", "JMD", "JPY", "NGN", "RUB", "USD", "XAU"];
-
 
 /*-------------------------Checkboxes---------------------------*/
 

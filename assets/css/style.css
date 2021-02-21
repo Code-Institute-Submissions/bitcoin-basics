@@ -381,7 +381,6 @@ footer {
     font-family: 'Roboto',
         sans-serif;
     border-radius: 20px;
-
 }
 
 /*---------------------- News HTML ------------------------*/
@@ -477,6 +476,13 @@ footer {
     text-align: center;
     margin: .5rem;
     font-size: 14px;
+}
+
+/*-------------------- Modals ---------------------*/
+
+#emailModalSuccess p,
+#emailModalError p {
+    text-align: center;
 }
 
 /*-------------------- Media Queries ---------------------*/
@@ -626,7 +632,6 @@ footer {
             padding: 110px;
             margin: 0 -400px;
         }
-
 
         .pgButtonItem {
             display: block;
