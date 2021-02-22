@@ -1,5 +1,5 @@
 let tableBody = document.getElementById("coinPriceTable");
-let currencyListCodes = document.getElementById("currencyList")
+let currencyListCodes = document.getElementById("currencyList");
 
 const currencies = ["AUD", "CNY", "EUR", "GBP", "INR", "JMD", "JPY", "NGN", "RUB", "USD", "XAU"];
 
@@ -13,7 +13,7 @@ function fillArray(currency) {
         return response.json();
     }).then(data => {
         $(currencyListCodes).append(`<tr><td><input id="currencyList" type="checkbox" class="currencyCheck" value="${data.bpi[`${currency}`].code}">(${data.bpi[`${currency}`].code}) ${data.bpi[`${currency}`].description}</td></tr>`);
-    })
+    });
 }
 currencies.forEach((checkedCurrencies) => {
     fillArray(checkedCurrencies);

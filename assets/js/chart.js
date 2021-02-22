@@ -36,7 +36,7 @@ function fetchHist() {
             }
             return response.json();
         }).then(function (data) {
-            bitArray = data.bpi;
+            const bitArray = data.bpi;
             let bitString = JSON.stringify(bitArray);
             let bitItem = bitString.split(',');
             bitItem.forEach(itemObj => {

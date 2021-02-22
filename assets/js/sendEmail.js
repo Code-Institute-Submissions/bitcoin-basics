@@ -13,7 +13,7 @@ function sendMail(contactForm) {
                 },
                 function (error) {
                     $('#emailModalError').modal('show');
-                })
+                });
     } else {
         $('#emailModalError').modal('show');
     }

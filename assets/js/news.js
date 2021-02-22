@@ -5,7 +5,7 @@ function newsApi() {
     fetch('https://data.messari.io/api/v1/news/btc')
         .then((res) => {
             //console.log(res);
-            return res.json()
+            return res.json();
         })
         .then((data => {
             //console.log(data);
@@ -13,13 +13,13 @@ function newsApi() {
                 let li = document.createElement('li');
                 let a = document.createElement('a');
                 a.setAttribute('href', data.url);
-                a.setAttribute('target', '_blank')
+                a.setAttribute('target', '_blank');
                 a.textContent = data.title;
                 li.appendChild(a);
                 newsContent(li);
-            })
+            });
 
-        }))
+        }));
 
     function newsContent(li) {
         btcNews.appendChild(li);
