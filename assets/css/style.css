@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
     margin: 0;
@@ -22,20 +21,6 @@ body {
 
 .container-fluid {
     margin-top: auto;
-}
-
-#pagination-right,
-#pagination-left {
-    background-color: rgb(255, 153, 0);
-    color: #000;
-}
-
-#pagination-right i {
-    padding-left: 20px;
-}
-
-#pagination-left i {
-    padding-right: 20px;
 }
 
 /*----------------------------- Header -------------------------------*/
@@ -213,6 +198,50 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
+#pagination-right,
+#pagination-left {
+    display: block;
+    width: 50%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    font-family: 'Roboto',
+        sans-serif;
+    border-radius: 20px;
+}
+
+#pagination-right,
+#pagination-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+#pagination-right,
+#pagination-left {
+    background-color: rgb(255, 153, 0);
+    color: #000;
+}
+
+#pagination-right i {
+    padding-left: 20px;
+}
+
+#pagination-left i {
+    padding-right: 20px;
+}
+
 /*---------------------- Index HTML -----------------------*/
 .content {
     width: 100%;
@@ -272,7 +301,6 @@ footer {
     -webkit-transition: 2s ease;
     -o-transition: 2s ease;
     transition: 2s ease;
-
 }
 
 .pgButtonItem {
@@ -310,7 +338,6 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: auto;
-
 }
 
 .accor-container h1 {
@@ -334,7 +361,6 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
 }
 
 #headingOne,
@@ -476,25 +502,6 @@ footer {
     border-radius: 20px;
 }
 
-#pagination-right,
-#pagination-left {
-    display: block;
-    width: 50%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    font-family: 'Roboto',
-        sans-serif;
-    border-radius: 20px;
-}
-
 /*---------------------- News HTML ------------------------*/
 
 #newsArticle {
@@ -530,7 +537,6 @@ footer {
     margin: .5rem;
     font-size: 15px;
 }
-
 
 .graphTitle,
 .graphText {
@@ -663,7 +669,6 @@ footer {
         margin-bottom: 0;
         margin-top: 5px;
     }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -758,7 +763,6 @@ footer {
         margin: .5rem;
         font-size: 14px;
         padding: 20px;
-
     }
 }
 
@@ -833,17 +837,6 @@ footer {
             sans-serif;
     }
 
-    #pagination-right,
-    #pagination-left {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        padding: 10px;
-        border-radius: 20px;
-        width: 30%;
-        font-family: 'Roboto',
-            sans-serif;
-    }
-
     .table {
         width: 70%;
         margin: auto;
@@ -882,8 +875,6 @@ footer {
         padding-right: 20px;
         margin-left: 20%;
     }
-
-
 
     /*Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {

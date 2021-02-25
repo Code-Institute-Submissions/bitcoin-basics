@@ -19,8 +19,6 @@ currencies.forEach((checkedCurrencies) => {
     fillArray(checkedCurrencies);
 });
 
-
-
 /*-------------------------Submit Checked Boxes Button---------------------------*/
 let checkedCurrencies = [];
 $(document).ready(function () {
@@ -44,7 +42,6 @@ $(document).ready(function () {
         $(".currencyCheck").prop("checked", false);
     });
 });
-
 
 /*-------------------------Select All Button---------------------------*/
 

@@ -16,7 +16,6 @@ function newsApi() {
                 li.appendChild(a);
                 newsContent(li);
             });
-
         }));
 
     function newsContent(li) {
