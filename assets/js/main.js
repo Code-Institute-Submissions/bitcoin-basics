@@ -22,7 +22,7 @@ currencies.forEach((checkedCurrencies) => {
 
 
 /*-------------------------Submit Checked Boxes Button---------------------------*/
-const checkedCurrencies = [];
+let checkedCurrencies = [];
 $(document).ready(function () {
     $("#currButton").click(function () {
         resetTable();
