@@ -24,6 +24,10 @@ body {
     flex-direction: column;
 }
 
+.container-fluid {
+    margin-top: auto;
+}
+
 /*----------------------------- Header -------------------------------*/
 .navbar .navbar-brand {
     width: 75%;
@@ -298,6 +302,7 @@ footer {
     align-self: center;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: auto;
 
 }
 
@@ -475,13 +480,14 @@ footer {
 
 .subheader img {
     width: 90%;
+    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: space-between;
+    text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin: 20px auto;
 }
 
 /*------------------- Charts HTML --------------------*/
@@ -526,6 +532,16 @@ footer {
 
 .form-control .text {
     margin-bottom: 20px;
+}
+
+.text img {
+    width: 20%;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px auto;
 }
 
 #emailForm,
@@ -609,15 +625,9 @@ footer {
         width: 80%;
     }
 
-    .subheader img {
+    .subheader img p {
         width: 90%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin-left: 30px;
-        margin-right: 25px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        text-align: center;
     }
 
     #emailForm,
@@ -694,15 +704,9 @@ footer {
     }
 
     /*---------------------- News HTML -----------------------*/
-    .subheader img {
+    .subheader img p {
         width: 70%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin-left: 150px;
-        margin-right: 100px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        text-align: center;
     }
 
     #coinPriceTable {
@@ -850,6 +854,8 @@ footer {
         margin-left: 20%;
     }
 
+
+
     /*Extra large devices (large desktops, 1200px and up) */
     @media (min-width: 1200px) {
 
@@ -911,18 +917,8 @@ footer {
             /* margin-top: 270px; */
         }
 
-        .subheader img {
-            width: 50%;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            margin-left: 300px;
-            margin-right: 300px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        .subheader img {
+        /*---------------------- News HTML -----------------------*/
+        .subheader img p {
             width: 50%;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
