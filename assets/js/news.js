@@ -4,11 +4,9 @@ function newsApi() {
 
     fetch('https://data.messari.io/api/v1/news/btc')
         .then((res) => {
-            //console.log(res);
             return res.json();
         })
         .then((data => {
-            //console.log(data);
             data.data.forEach(data => {
                 let li = document.createElement('li');
                 let a = document.createElement('a');

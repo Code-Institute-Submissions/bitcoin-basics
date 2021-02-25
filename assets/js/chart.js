@@ -36,7 +36,7 @@ function fetchHist() {
             }
             return response.json();
         }).then(function (data) {
-            const bitArray = data.bpi;
+            bitArray = data.bpi;
             let bitString = JSON.stringify(bitArray);
             let bitItem = bitString.split(',');
             bitItem.forEach(itemObj => {
@@ -45,7 +45,7 @@ function fetchHist() {
                 xAxis.push(date);
                 const rate = bpiItem[1];
                 yRates.push(rate);
-                //console.log(date, rate);
+
             });
             chartBitcoin(data);
         })

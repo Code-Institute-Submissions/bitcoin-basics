@@ -14,6 +14,16 @@
     box-sizing: border-box;
 }
 
+/* html {
+    height: 100%;
+} */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /*----------------------------- Header -------------------------------*/
 .navbar .navbar-brand {
     width: 75%;
@@ -45,7 +55,7 @@
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: center;
@@ -136,6 +146,7 @@ footer {
     padding-top: 0;
     -ms-grid-column-align: start;
     justify-self: start;
+    margin-top: auto;
 }
 
 .footer-padding {
@@ -145,11 +156,11 @@ footer {
 .social ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 270px;
+    /* margin-top: 270px; */
 }
 
 .social ul li {
@@ -193,13 +204,13 @@ footer {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 .homeHeader.container {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    /* display: flex; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -214,8 +225,8 @@ footer {
 }
 
 .fullLogo {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    /* margin-top: 16px;
+    margin-bottom: 16px; */
     width: 100%;
 }
 
@@ -236,7 +247,7 @@ footer {
     text-align: center;
     margin: .5rem;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #pgButtons {
@@ -266,6 +277,7 @@ footer {
     font-family: 'Roboto', sans-serif;
     border-radius: 20px;
     background-color: rgb(255, 153, 0);
+    font-size: 1rem;
 }
 
 .pgButtonItem a {
@@ -474,7 +486,6 @@ footer {
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
-    margin-bottom: 38px;
     margin-top: 38px;
 }
 
@@ -502,6 +513,9 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    min-height: 100vh;
+    /* display: flex; */
+    flex-direction: column;
 }
 
 #formButton {
@@ -571,18 +585,18 @@ footer {
     .social ul {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        /* display: flex; */
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-top: 270px;
+        /* margin-top: 270px; */
     }
 
     .content {
         width: 50%;
         padding-right: 15px;
         padding-left: 15px;
-        margin: auto;
+        margin: 20px auto;
     }
 
     /*--------- Market Rates HTML ---------*/
@@ -597,12 +611,6 @@ footer {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    }
-
-    /*--------- Charts HTML ---------*/
-    #graphCanvas .card {
-        margin-bottom: 0px;
-        margin-top: 0px;
     }
 
     /*-------- Email-Sub HTML --------*/
@@ -642,17 +650,17 @@ footer {
         width: 50%;
         padding-right: 15px;
         padding-left: 15px;
-        margin: auto;
+        margin: 20px auto;
     }
 
     .social ul {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex;
+        /* display: flex; */
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        margin-top: 270px;
+        /* margin-top: 270px; */
     }
 
     .navbar .navbar-brand {
@@ -733,16 +741,129 @@ footer {
         padding: 20px;
 
     }
+}
 
-    /* Large devices (desktops, 992px and up) */
-    @media (min-width: 992px) {
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /*---------------------- Index HTML -----------------------*/
+    .content {
+        width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 20px auto;
+    }
+
+    #pgButtons {
+        right: 30%;
+        top: 40%;
+        left: 30%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+        -webkit-transform: translateY(-30%);
+        -ms-transform: translateY(-30%);
+        transform: translateY(-110%);
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        padding: 110px;
+        margin: 0 -400px;
+    }
+
+    .pgButtonItem {
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .pgButtonItem a {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin: 10 px 10px;
+    }
+
+    .social ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        /* display: flex; */
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        /* margin-top: 270px; */
+    }
+
+    /*---------------------- Market Rates HTML -----------------------*/
+    #selectAll,
+    #currButton,
+    #clearButton {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        /* display: flex; */
+        padding: 10px;
+        border-radius: 20px;
+        width: 25%;
+        font-family: 'Roboto',
+            sans-serif;
+    }
+
+    .table {
+        width: 70%;
+        margin: auto;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        text-align: justify;
+    }
+
+    #rateTable tbody tr th {
+        margin: auto;
+        width: auto;
+        margin: .5rem;
+        font-size: 27px;
+    }
+
+    .accor-container h1 {
+        text-align: center;
+        margin: .5rem;
+        font-size: 27px;
+    }
+
+    .accor-container h2 {
+        text-align: center;
+        margin: .5rem;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    /*---------------------- News HTML -----------------------*/
+    #newsArticle {
+        text-align: justify;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20%;
+    }
+
+    /*Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
 
         /*---------------------- Index HTML -----------------------*/
         .content {
-            width: 50%;
+            width: 30%;
             padding-right: 15px;
             padding-left: 15px;
-            margin: auto;
+            margin: 20px auto;
         }
 
         #pgButtons {
@@ -752,13 +873,13 @@ footer {
             -webkit-transform: translateX(50%);
             -ms-transform: translateX(50%);
             transform: translateX(50%);
-            -webkit-transform: translateY(-130%);
-            -ms-transform: translateY(-130%);
-            transform: translateY(-130%);
+            -webkit-transform: translateY(-175%);
+            -ms-transform: translateY(-175%);
+            transform: translateY(-175%);
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
             display: inline-flex;
-            padding: 110px;
+            /* padding: 110px; */
             margin: 0 -400px;
         }
 
@@ -782,161 +903,49 @@ footer {
             text-align: center;
             position: relative;
             margin: 10 px 10px;
+            padding: 0;
         }
 
         .social ul {
             display: -webkit-box;
             display: -ms-flexbox;
-            display: flex;
+            /* display: flex; */
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            margin-top: 270px;
+            /* margin-top: 270px; */
         }
 
-        /*---------------------- Market Rates HTML -----------------------*/
-        #selectAll,
-        #currButton,
-        #clearButton {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            padding: 10px;
-            border-radius: 20px;
-            width: 25%;
-            font-family: 'Roboto',
-                sans-serif;
-        }
-
-        .table {
-            width: 70%;
-            margin: auto;
-            -webkit-box-pack: start;
-            -ms-flex-pack: start;
-            justify-content: start;
-            text-align: justify;
-        }
-
-        #rateTable tbody tr th {
-            margin: auto;
-            width: auto;
-            margin: .5rem;
-            font-size: 27px;
-        }
-
-        .accor-container h1 {
-            text-align: center;
-            margin: .5rem;
-            font-size: 27px;
-        }
-
-        .accor-container h2 {
-            text-align: center;
-            margin: .5rem;
-            font-size: 20px;
+        .subheader img {
+            width: 50%;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-left: 300px;
+            margin-right: 300px;
+            padding-top: 20px;
             padding-bottom: 20px;
         }
 
-        /*---------------------- News HTML -----------------------*/
-        #newsArticle {
-            text-align: justify;
+        .subheader img {
+            width: 50%;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-left: 300px;
+            margin-right: 300px;
             padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-left: 20%;
+            padding-bottom: 20px;
         }
 
-        /*Extra large devices (large desktops, 1200px and up) */
-        @media (min-width: 1200px) {
-
-            /*---------------------- Index HTML -----------------------*/
-            .content {
-                width: 30%;
-                padding-right: 15px;
-                padding-left: 15px;
-                margin: auto;
-            }
-
-            #pgButtons {
-                right: 30%;
-                top: 100%;
-                left: 30%;
-                -webkit-transform: translateX(50%);
-                -ms-transform: translateX(50%);
-                transform: translateX(50%);
-                -webkit-transform: translateY(-175%);
-                -ms-transform: translateY(-175%);
-                transform: translateY(-175%);
-                display: -webkit-inline-box;
-                display: -ms-inline-flexbox;
-                display: inline-flex;
-                padding: 110px;
-                margin: 0 -400px;
-            }
-
-            .pgButtonItem {
-                display: block;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                margin: auto;
-                text-align: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                position: relative;
-            }
-
-            .pgButtonItem a {
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                text-align: center;
-                position: relative;
-                margin: 10 px 10px;
-            }
-
-            .social ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                margin-top: 270px;
-            }
-
-            .subheader img {
-                width: 50%;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                margin-left: 300px;
-                margin-right: 300px;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-
-            .subheader img {
-                width: 50%;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                margin-left: 300px;
-                margin-right: 300px;
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-
-            /*---------------------- Email Sub HTML -----------------------*/
-            .subscribe {
-                -ms-flex-item-align: center;
-                -ms-grid-row-align: center;
-                align-self: center;
-                display: block;
-                width: 50%;
-                padding-bottom: 10px;
-            }
+        /*---------------------- Email Sub HTML -----------------------*/
+        .subscribe {
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            display: block;
+            width: 50%;
+            padding-bottom: 10px;
         }
     }
 }

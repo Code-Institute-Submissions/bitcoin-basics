@@ -19,16 +19,20 @@ currencies.forEach((checkedCurrencies) => {
     fillArray(checkedCurrencies);
 });
 
+
+
 /*-------------------------Submit Checked Boxes Button---------------------------*/
 const checkedCurrencies = [];
 $(document).ready(function () {
     $("#currButton").click(function () {
+        resetTable();
         $.each($("input[type='checkbox']:checked"), function () {
             checkedCurrencies.push($(this).val());
         });
         checkedCurrencies.forEach((currency) => {
             fetchApi(currency);
         });
+        checkedCurrencies = [];
     });
 });
 
@@ -36,19 +40,24 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#clearButton").click(function () {
+        resetTable();
         $(".currencyCheck").prop("checked", false);
-        document.getElementById("coinPriceTable").innerHTML = "";
     });
 });
+
 
 /*-------------------------Select All Button---------------------------*/
 
 $(document).ready(function () {
     $("#selectAll").click(function () {
+        resetTable();
         $(".currencyCheck").prop("checked", true);
-        document.getElementById("coinPriceTable").innerHTML = "";
     });
 });
+
+function resetTable() {
+    document.getElementById("coinPriceTable").innerHTML = "";
+}
 
 /*-------------------------Display Checked Boxes In Table---------------------------*/
 

@@ -27,129 +27,130 @@
 </head>
 
 <body class="e-body">
+    <header>
+        <!-- Logo and Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/bitcoin-basics-lg.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!-- Logo and Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
-        <a class="navbar-brand" href="index.html"><img src="assets/images/bitcoin-basics-lg.jpg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="getting-started.html">
-                        Get Started
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="market-rates.html">Market Rates</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="charts.html">Charts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">Latest News</a>
-                </li>
-                <li class="nav-item active">
-                    <a id="navButton" class="btn btn-outline-dark btn-sm nav-link" href="email-sub.html"><span
-                            class="sr-only">(current)</span>Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Logo and Navbar -->
-    <div class="subscribe">
-        <div class="text">
-            <h1>Contact Us</h1>
-            <h2>If you have any questions or feedback, please send us a message or contact us on our social media links
-                below. <br><br> We would love to hear from you!</h2>
-        </div>
-        <!-- Email Form -->
-        <form onsubmit="return sendMail(this);" id="emailForm" class="needs-validation" novalidate>
-            <div class="mb-2">
-                <input type="text" name="name" class="form-control" id="fromName" value=""
-                    placeholder="Please enter a valid name..." autocomplete="off" required>
-                <div class="invalid-tooltip">Please provide a valid name.</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="getting-started.html">
+                            Get Started
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="market-rates.html">Market Rates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="charts.html">Charts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Latest News</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a id="navButton" class="btn btn-outline-dark btn-sm nav-link" href="email-sub.html"><span
+                                class="sr-only">(current)</span>Contact Us</a>
+                    </li>
+                </ul>
             </div>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <div class="subscribe">
+            <div class="text">
+                <h1>Contact Us</h1>
+                <h2>If you have any questions or feedback, please send us a message or contact us on our social media
+                    links
+                    below. <br><br> We would love to hear from you!</h2>
+            </div>
+            <!-- Email Form -->
+            <form onsubmit="return sendMail(this);" id="emailForm" class="needs-validation" novalidate>
+                <div class="mb-2">
+                    <input type="text" name="name" class="form-control" id="fromName" value=""
+                        placeholder="Please enter a valid name..." autocomplete="off" required>
+                    <div class="invalid-tooltip">Please provide a valid name.</div>
+                </div>
 
-            <div class="mb-2">
-                <div class="input-group needs-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="email" name="emailaddress" class="form-control" id="replyTo"
-                        aria-describedby="inputGroupPrepend" placeholder="Please enter a valid email address..."
-                        autocomplete="off" required>
+                <div class="mb-2">
+                    <div class="input-group needs-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="email" name="emailaddress" class="form-control" id="replyTo"
+                            aria-describedby="inputGroupPrepend" placeholder="Please enter a valid email address..."
+                            autocomplete="off" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid email address.
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea rows="5" name="message" class="form-control needs-validation" id="message"
+                        placeholder="Send us your feedback/Bitcoin questions..." autocomplete="off" required></textarea>
                     <div class="invalid-tooltip">
-                        Please provide a valid email address.
+                        Please enter a message in the textarea.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button id="formButton" type="submit" class="btn btn-dark">Send</button>
+                </div>
+            </form>
+            <!-- Modals -->
+            <!-- Success Modal -->
+            <div class="modal fade" id="emailModalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting Basic Bitcoin!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body"><span class="send-icon"><i class="fas fa-check-circle"></i></span>
+                            Your message has been sent successfully!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="mb-3">
-                <textarea rows="5" name="message" class="form-control needs-validation" id="message"
-                    placeholder="Send us your feedback/Bitcoin questions..." autocomplete="off" required></textarea>
-                <div class="invalid-tooltip">
-                    Please enter a message in the textarea.
-                </div>
-            </div>
 
-            <div class="mb-3">
-                <button id="formButton" type="submit" class="btn btn-dark">Send</button>
-            </div>
-        </form>
-        <!-- Modals -->
-        <!-- Success Modal -->
-        <div class="modal fade" id="emailModalSuccess" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting Basic Bitcoin!</h5>
+            <!-- Error Modal -->
+            <div class="modal fade" id="emailModalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                    </div>
-                    <div class="modal-body"><span class="send-icon"><i class="fas fa-check-circle"></i></span>
-                        Your message has been sent successfully!
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Error Modal -->
-        <div class="modal fade" id="emailModalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="errorLabel">Thank you for contacting Basic
-                            Bitcoin
-                        </h5>
-                    </div>
-                    <div class="modal-body">
-                        <p>Unfortunately something went wrong and your message did not send.<br>Please try
-                            again. </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="errorLabel">Thank you for contacting Basic
+                                Bitcoin
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>Unfortunately something went wrong and your message did not send.<br>Please try
+                                again. </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
     <!-- Footer -->
-    <footer class=" container-fluid">
+    <footer class="container-fluid">
         <div class="social">
             <ul>
                 <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -165,7 +166,7 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
