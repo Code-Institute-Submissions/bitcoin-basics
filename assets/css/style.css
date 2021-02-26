@@ -110,6 +110,7 @@ body {
 
 .pgButtonItem:hover {
     background: #000;
+    color: rgb(255, 153, 0);
 }
 
 .pgButtonItem a:hover {
