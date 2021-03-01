@@ -102,6 +102,7 @@ body {
 
 #formButton:hover {
     background-color: rgb(255, 153, 0);
+    color: #000;
 }
 
 .social li a i:hover {
@@ -559,6 +560,7 @@ footer {
     -ms-grid-row-align: center;
     align-self: center;
     font-family: 'Roboto', sans-serif;
+    color: rgb(255, 153, 0);
 }
 
 #replyTo {
