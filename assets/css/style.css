@@ -782,9 +782,14 @@ footer {
         margin: 20px auto;
     }
 
+    .btn-group-lg>.btn,
+    .btn-lg {
+        padding: 0 .9rem;
+    }
+
     #pgButtons {
         right: 30%;
-        top: 40%;
+        top: 90%;
         left: 30%;
         -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
@@ -894,13 +899,13 @@ footer {
 
         #pgButtons {
             right: 30%;
-            top: 100%;
+            top: 90%;
             left: 30%;
             -webkit-transform: translateX(50%);
             -ms-transform: translateX(50%);
             transform: translateX(50%);
             -webkit-transform: translateY(-175%);
-            -ms-transform: translateY(-175%);
+            -ms-transform: translateY(-150%);
             transform: translateY(-125%);
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
