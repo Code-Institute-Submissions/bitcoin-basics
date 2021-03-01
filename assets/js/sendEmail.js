@@ -1,7 +1,12 @@
+let contactForm = document.getElementById("emailForm");
+
 function sendMail(contactForm) {
+
     const email = document.getElementById("replyTo").value;
+    const message = document.getElementById("emailMessage").value;
     let isValid = ValidateEmail(email);
-    if (isValid) {
+    let mValid = ValidateMessage(message);
+    if (isValid && mValid) {
         emailjs.send("gmail", "bb", {
                 "from_name": contactForm.name.value,
                 "from_email": contactForm.emailaddress.value,
@@ -23,26 +28,18 @@ function sendMail(contactForm) {
 function ValidateEmail(email) {
     var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if (email.match(mailformat)) {
-        $('#emailModalSuccess').modal('show');
         return true;
-    } else {
-        $('#emailModalError').modal('show');
-        return false;
     }
+    return false;
 }
 
-(function () {
-    'use strict';
-    window.addEventListener('load', function () {
-        var forms = document.getElementsByClassName('needs-validation');
-        var validation = Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener('submit', function (event) {
-                if (form.checkValidity() === false) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    }, false);
-})();
+function ValidateMessage(message) {
+    if (message !== "") {
+        return true;
+    }
+    return false;
+}
+
+contactForm.addEventListener('submit', function () {
+    sendMail(this);
+})
