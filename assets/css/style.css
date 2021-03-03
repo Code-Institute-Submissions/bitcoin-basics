@@ -274,6 +274,7 @@ footer {
 
 .fullLogo {
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .subheader {
@@ -294,6 +295,10 @@ footer {
     margin: .5rem;
     font-size: 20px;
     padding-bottom: 10px;
+}
+
+.btn {
+    padding: .15rem;
 }
 
 #pgButtons {
@@ -643,6 +648,10 @@ footer {
         margin: 20px auto;
     }
 
+    .btn {
+        padding: .3rem;
+    }
+
     /*--------- Market Rates HTML ---------*/
     .navbar .navbar-brand {
         width: 40%;
@@ -687,6 +696,30 @@ footer {
         padding-right: 15px;
         padding-left: 15px;
         margin: 20px auto;
+    }
+
+    .btn-group-lg>.btn,
+    .btn-lg {
+        padding: 2.2rem;
+    }
+
+    .btn-block {
+        width: 80%;
+    }
+
+    .pgButtonItem {
+        display: block;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        font-size: 1.5rem;
+        border-radius: 90px;
     }
 
     .social ul {
@@ -786,24 +819,11 @@ footer {
 
     .btn-group-lg>.btn,
     .btn-lg {
-        padding: 0 .9rem;
+        padding: 2.2rem;
     }
 
-    #pgButtons {
-        right: 30%;
-        top: 90%;
-        left: 30%;
-        -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-        transform: translateX(50%);
-        -webkit-transform: translateY(-30%);
-        -ms-transform: translateY(-30%);
-        transform: translateY(-125%);
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        padding: 110px;
-        margin: 0 -400px;
+    .btn-block {
+        width: 80%;
     }
 
     .pgButtonItem {
@@ -817,6 +837,8 @@ footer {
         -ms-flex-align: center;
         align-items: center;
         position: relative;
+        font-size: 1.5rem;
+        border-radius: 90px;
     }
 
     .pgButtonItem a {
@@ -899,22 +921,6 @@ footer {
             margin: 20px auto;
         }
 
-        #pgButtons {
-            right: 30%;
-            top: 90%;
-            left: 30%;
-            -webkit-transform: translateX(50%);
-            -ms-transform: translateX(50%);
-            transform: translateX(50%);
-            -webkit-transform: translateY(-175%);
-            -ms-transform: translateY(-150%);
-            transform: translateY(-125%);
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
-            display: inline-flex;
-            margin: 0 -400px;
-        }
-
         .pgButtonItem {
             display: block;
             -webkit-box-pack: center;
@@ -926,6 +932,8 @@ footer {
             -ms-flex-align: center;
             align-items: center;
             position: relative;
+            font-size: 1.5rem;
+            border-radius: 90px;
         }
 
         .pgButtonItem a {
@@ -936,6 +944,10 @@ footer {
             position: relative;
             margin: 10px 10px;
             padding: 0;
+        }
+
+        .btn-block {
+            width: 70%;
         }
 
         .social ul {
