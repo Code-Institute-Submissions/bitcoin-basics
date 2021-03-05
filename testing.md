@@ -235,9 +235,7 @@ The following steps were repeated on physical devices available to the developer
 ![Reset Bug Image](assets/images/testing-image/resetbug.png)
 
 1. **The 'Reset' button did not clear the last checked options so it added the new options to the table underneath the last ones**
-    - Fix:
-    
-    Added `checkedCurrencies = [];` into the function calling the API
+    - Fix: Added `checkedCurrencies = [];` into the function calling the API
 
     Then added a new function, which was called within each of the buttons:
     ```
