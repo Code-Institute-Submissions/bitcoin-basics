@@ -1,8 +1,12 @@
+<h1 align="center">
+<a href="https://shoreenb.github.io/bitcoin-basics/" target="_blank"><img src="assets/images/bitcoin-basics-lg.jpg" alt="Bitcoin Basics Logo"/></a>
+</h1>
+
 # Testing For Bitcoin Basics
 
 [Main README.md](README.md)
 
-[View The Bitcoin Basics Website](https://shoreenb.github.io/bitcoin-basics/)
+[Visit the Bitcoin Basics page](https://shoreenb.github.io/bitcoin-basics/)
 
 ## Table Of Contents
 
@@ -243,8 +247,8 @@ The following steps were repeated on physical devices available to the developer
     ```
     This ensured that the table was cleared before the button 'Display Codes In Table' was clicked
 
-2. **The news article titles have a marker and the blue underline text decoration**
+2. **The news article titles had the blue underline text decoration**
 
-- The style for the news articles coming from the [Messari API](https://messari.io) would not be altered using CSS. 
+    The style for the news articles coming from the [Messari API](https://messari.io) would not be altered using CSS. 
     -Fix:
-    Add `a.style.color = 'black';` into the news.js JavaScript function to change the text colour from blue to black.
+    Added `a.style.color = 'black';` into the news.js JavaScript function to change the text colour from blue to black.
