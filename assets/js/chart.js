@@ -1,15 +1,16 @@
 /*-------------------------Chart---------------------------*/
 
-//Historical data from:https://api.coindesk.com/v1/bpi/historical/close.json Powered by CoinDesk:https://www.coindesk.com/price/bitcoin,
-//Chart JS Tutorial info from Excellence in Excel:https://www.youtube.com/watch?v=4jfcxxTT8H0
-//Chart JS Tutorial info from Arslan:https://www.youtube.com/watch?v=mlSKLmG80Us&t=259s
-//Api Powered by CoinDesk:https://www.coindesk.com/price/bitcoin
+// Historical data from:https://api.coindesk.com/v1/bpi/historical/close.json Powered by CoinDesk:https://www.coindesk.com/price/bitcoin,
+// Chart JS Tutorial info from Excellence in Excel:https://www.youtube.com/watch?v=4jfcxxTT8H0
+// Chart JS Tutorial info from Arslan:https://www.youtube.com/watch?v=mlSKLmG80Us&t=259s
+// Api Powered by CoinDesk:https://www.coindesk.com/price/bitcoin
 
+//Variables
 const xAxis = [];
 const yRates = [];
 
+//Display API data in the chart.
 function chartBitcoin(data) {
-
     const ctx = document.getElementById('histData').getContext('2d');
     const chart = new Chart(ctx, {
         type: 'line',
@@ -28,11 +29,13 @@ function chartBitcoin(data) {
     });
 }
 
-function fetchHist() {
+// Call API data, convert JSON object into a string and split the data so the date can be pushed to the X axis and 
+// the rate can be pushed to the Y axis.
 
+function fetchHist() {
     fetch('https://api.coindesk.com/v1/bpi/historical/close.json').then(response => {
             if (!status == 200) {
-                console.error("ERROR");
+                alert("ERROR");
             }
             return response.json();
         }).then(function (data) {
@@ -50,7 +53,7 @@ function fetchHist() {
             chartBitcoin(data);
         })
         .catch(error => {
-            console.log(error);
+            alert("ERROR, api failed to load data");
         });
 }
 fetchHist();

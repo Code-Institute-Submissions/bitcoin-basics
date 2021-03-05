@@ -1,14 +1,16 @@
+//Variables
 let tableBody = document.getElementById("coinPriceTable");
 let currencyListCodes = document.getElementById("currencyList");
-
 const currencies = ["AUD", "CNY", "EUR", "GBP", "INR", "JMD", "JPY", "NGN", "RUB", "USD", "XAU"];
 
 /*-------------------------Checkboxes---------------------------*/
 
+// Calls API and iterates over each country code, displaying each country Code as a checkbox.
+
 function fillArray(currency) {
     fetch(`https://api.coindesk.com/v1/bpi/currentprice/${currency}.json`).then(response => {
         if (!status == 200) {
-            console.error("ERROR");
+            alert("ERROR, api failed to load data");
         }
         return response.json();
     }).then(data => {
@@ -20,6 +22,9 @@ currencies.forEach((checkedCurrencies) => {
 });
 
 /*-------------------------Submit Checked Boxes Button---------------------------*/
+
+//Pushes API data for checked checkboxes into display table.
+
 let checkedCurrencies = [];
 $(document).ready(function () {
     $("#currButton").click(function () {
@@ -36,6 +41,8 @@ $(document).ready(function () {
 
 /*-------------------------Reset Table Button---------------------------*/
 
+//Clears any data in the table and any checked checkboxes.
+
 $(document).ready(function () {
     $("#clearButton").click(function () {
         resetTable();
@@ -45,6 +52,8 @@ $(document).ready(function () {
 
 /*-------------------------Select All Button---------------------------*/
 
+//Selects all the checkboxes.
+
 $(document).ready(function () {
     $("#selectAll").click(function () {
         resetTable();
@@ -52,22 +61,24 @@ $(document).ready(function () {
     });
 });
 
+//BUG Fix: Add this function to clear the results from the table and prevent the results accumulating.
 function resetTable() {
     document.getElementById("coinPriceTable").innerHTML = "";
 }
 
 /*-------------------------Display Checked Boxes In Table---------------------------*/
 
+//Calls the API data and appends it in rows of the table.
 function fetchApi(currency) {
     fetch(`https://api.coindesk.com/v1/bpi/currentprice/${currency}.json`).then(response => {
             if (!status == 200) {
-                console.error("ERROR");
+                alert("ERROR, api failed to load data");
             }
             return response.json();
         }).then(data => {
             $(tableBody).append(`<tr><td>${data.bpi[`${currency}`].code}</td><td>${data.bpi[`${currency}`].description}</td><td>${data.bpi[`${currency}`].rate}</td></tr>`);
         })
         .catch(error => {
-            console.log(error);
+            alert("ERROR, api failed to load data");
         });
 }
