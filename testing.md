@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 align="left">
 <a href="https://shoreenb.github.io/bitcoin-basics/" target="_blank"><img src="assets/images/bitcoin-basics-lg.jpg" alt="Bitcoin Basics Logo"/></a>
 </h1>
 
@@ -250,5 +250,5 @@ The following steps were repeated on physical devices available to the developer
 2. **The news article titles had the blue underline text decoration**
 
     The style for the news articles coming from the [Messari API](https://messari.io) would not be altered using CSS. 
-    -Fix:
+    - Fix:
     Added `a.style.color = 'black';` into the news.js JavaScript function to change the text colour from blue to black.
