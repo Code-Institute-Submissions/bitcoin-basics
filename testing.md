@@ -11,12 +11,10 @@
 2. [**Testing Client Stories**](#clientStories)
 
 3. [**Manual Testing**](#manual)
-
 - [**Tests For Desktop**](#desktop)
 - [**Tests for Mobile Devices (Tablet and Phone)**](#devices)
 
 4. [**Bugs**](#bugs)
-
 - [**Solved**](#solved)
 
 ## Validation Services
