@@ -7,7 +7,8 @@
 
 <div align="center">
 
-[Bitcoin Basics](https://shoreenb.github.io/bitcoin-basics/) is an informative website, devised for those who want to learn about this new (and often overwhelming) technology. Features include: a beginners guide demystifying Bitcoin,  current market rates and a clean, minimalist design that enables a newcomer to easily navigate the pages.
+[Bitcoin Basics](https://shoreenb.github.io/bitcoin-basics/) is an informative website, devised for those who want to learn about this new (and often overwhelming) technology.
+<br>Features include: a beginners guide demystifying Bitcoin,  current market rates and a clean, minimalist design that enables a newcomer to easily navigate the pages.
 <br>
 
 ![Mock Up Image](assets/images/read-me/mockup.png)
