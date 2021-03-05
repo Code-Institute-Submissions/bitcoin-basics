@@ -1,55 +1,58 @@
-# Bitcoin Basics
-
-![Bitcoin Basics Logo](assets/images/bitcoin-basics-lg.jpg)
-
-[Link to Live Project - An introduction to Bitcoin for beginners](https://shoreenb.github.io/bitcoin-basics/)
-
-<p align="center">[Bitcoin Basics] is an informative website, devised for those who want to learn about this new (and often overwhelming) technology. Features include: a beginners guide demystifying Bitcoin,  current market rates and a clean, minimalist design that enables a newcomer to easily navigate the pages.</p>
+<h1 align="center">
+<a href="https://shoreenb.github.io/bitcoin-basics/" target="_blank"><img src="assets/images/bitcoin-basics-lg.jpg" alt="Bitcoin Basics Logo"/></a>
+</h1>
+<h2>
+[An introduction to Bitcoin for beginners](https://shoreenb.github.io/bitcoin-basics/)
+</h2>
+<div align="center">
+[Bitcoin Basics] is an informative website, devised for those who want to learn about this new (and often overwhelming) technology. Features include: a beginners guide demystifying Bitcoin,  current market rates and a clean, minimalist design that enables a newcomer to easily navigate the pages.
 
 ![Mock Up Image](assets/images/read-me/mockup.png)
 
+[Visit the Bitcoin Basics page](https://shoreenb.github.io/bitcoin-basics/)
+</div>
+
 ## Table of Contents
 
-1. <a name="UX">UX</a>
+1. [UX](#ux)
 
-   - <a name ="project">Project Goals</a>
-     - <a name="visitor">Visitor Goals</a>
-     - <a name="developer">Developer Goals</a>
-   - <a name="user">User Stories</a>
-   - <a name="design">Design</a>
-   - <a name="wireframes">Wireframes</a>
+   - [**Project Goals**](#project)
+   - [**Visitor Goals**](#visitor)
+   - [**Developer Goals**](#developer)
+   - [**User Stories**](#user)
+   - [**Design**](#design)
+   - [**Wireframes**](#wireframes)
 
-2. <a name="features">Features</a>
+2. [**Features**](#features)
 
-   - <a name="existing">Existing Features</a>
-   - <a name="featuresLeft">Features Left To Implement</a>
+   - [**Existing Features**](#existing)
+   - [**Features Left To Implement**](#featuresLeft)
 
-3. <a name="technologies">Technologies Used</a>
+3. [**Technologies Used**](#technologies)
 
-4. <a name="testing">Testing</a>
+4. [**Testing**](#testing)
 
-5. <a name="deploy">Deployment</a>
+5. [**Deployment**](#deploy)
 
-   - <a name="githubpages">GitHub Pages</a>
+   - [**GitHub Pages**](#githubpages)
+   - [**How to run this project locally**](#local)
 
-   - <a name="local">How to run this project locally</a>
+6. [**Credits**](#credits)
 
-6. <a name="credits">Credits</a>
+   - [**Content**](#content)
+   - [**Media**](#media)
+   - [**Code**](#code)
+   - [**Acknowledgements**](#acknowledge)
 
-   - <a name="content">Content</a>
-   - <a name="media">Media</a>
-   - <a name="code">Code</a>
-   - <a name="acknowledge">Acknowledgements</a>
+## UX
 
-## [UX](#ux)
-
-### [Project Goals](#project)
+### Project Goals
 
 The main goal of Bitcoin Basic is to provide information about Bitcoin that is easy to understand, so that a newcomer will leave the site with a solid foundational knowledge of what Bitcoin is, it's current rate and where they can find more in depth information if they want to learn more. It will be a fully responsive website, with a minimalist design and a logical easy to follow structure.
 
-#### [Visitor Goals](#visitor)
+#### Visitor Goals
 
-the target audience for this website is a user that is not necessarily technical, who has recently heard about bitcoin and wants:
+The target audience for this website is a user that is not necessarily technical, who has recently heard about Bitcoin and wants:
 
 - To know more about what it is and how to start using it.
 - To know the initial steps to take when first using bitcoin.
@@ -59,7 +62,7 @@ the target audience for this website is a user that is not necessarily technical
 - To see the current market rates of Bitcoin against various currencies.
 - To see current news on Bitcoin.
 
-#### [Developer Goals](#developer)
+#### Developer Goals
 
 As a developer the aim is to create a web application that will:
 
@@ -67,7 +70,7 @@ As a developer the aim is to create a web application that will:
 - Be responsive, interactive and dynamic using HTML, CSS, JavaScript and where necessary jQuery and/or API's in design, development and implementation.
 - Be a great addition to the portfolio.
 
-#### [User Stories](#user)
+#### User Stories
 
 As a newcomer to Bitcoin, with little to no technical knowledge, I want:
 
@@ -86,7 +89,7 @@ As someone who has more knowledge about Bitcoin, I want:
 4. To see the latest developments in Bitcoin.
 5. The ability to provide feedback about further improvements that can be made on the site to meet needs as an invested Bitcoin follower.
 
-#### [Design](#design)
+#### Design
 
 Bitcoin can easily become overwhelming to a newcomer who may not have looked at the financial market before, let alone cryptocurrency! Keeping that in mind the design choices have been made to interfere as little as possible with the main subject matter.
 
@@ -98,7 +101,9 @@ This contrasted well against black and white and added enough interest to the de
 
 ##### Font
 
-<img src="C:\Users\diamo\AppData\Roaming\Typora\typora-user-images\image-20210221235318159.png" alt="image-20210221235318159" style="zoom:33%;" />
+<div align="center">
+![Roboto Font](assets/images/read-me/roboto-font.png)
+</div>
 
 The font chosen was Roboto because it has a clean, modern type that would go well with the minimalist theme.
 
@@ -110,70 +115,83 @@ The icons used on the landing page were chosen to emphasise meaning and make it 
 
 As there are only a few elements on each page, the hover effect on the buttons directed the visitor to it's function but also added dynamism.
 
-#### [Wireframes](#wireframes)
+#### Wireframes
 
-## [Features](#features)
+The following wireframes were created on the skeleton plane as part of the planning process of the project using [Balsamiq](https://balsamiq.com/)
 
-#### [Existing Features](#existing)
+- [Home Page](assets/images/wireframes/landing-page.pdf)
+- [Get Started Page](assets/images/wireframes/getting-started.pdf)
+- [Market Rates Page](assets/images/wireframes/market-rates.pdf)
+- [News Page](assets/images/wireframes/news.pdf)
+- [Contact Form](assets/images/wireframes/email-form.pdf)
 
-1. ##### Landing Button Navigation Page
+## Features
 
-   - On arrival at the site, the visitor will see a group of 5 navigation buttons, which are in place of the navbar. The layout of the buttons are responsive, and will depend on the screen size you are using. 
+#### Existing Features
 
-     Up to max width 991px:
+1. ##### Home Page
 
-   ![Small Landing page Layout](assets/images/read-me/landing-page-small.png)
+   - On arrival at the site, the visitor will see a group of 6 navigation buttons, which are in place of the navbar. The width of the buttons are responsive, and will adapt to the screen size you are using. 
+    
+    <div align="center">
+   ![Home page Layout](assets/images/read-me/home-page.png)
+    </div>
 
-   
-
-   ​		Min width 992px and above:
-
-   ![Large Landing page layout](assets/images/read-me/landing-page-lrg.png)
-
-   - There is a smooth transition effect added if you change your screen size.
-   - From this landing page you can choose to go to the beginners guide or directly check the market price, monthly Bitcoin chart or the latest news if you are not a beginner.
+   - From the home page you can choose to go to the beginners guide or directly check the market price, monthly Bitcoin chart, the latest news or go to an exchange to buy Bitcoin if you are not a beginner.
 
 2. ##### A guide on how to get started with Bitcoin
 
-   - The accordion component allows the information in the guide to be displayed whilst  keeping the layout clutter free.
+   - The accordion component allows the information in the guide to be displayed whilst keeping the layout clutter free.
 
+    <div align="center">
      ![Closed Accordion](assets/images/read-me/accordion-closed.png)
+    </div>
 
    - This feature also allows the visitor to go straight to a particular part of the guide rather than being forced to read it all.
 
-   - The pale background colour of the open section makes it clear that section is open.
+   - The background colour of the open section makes it clear that section is open.
 
+    <div align="center">
      ![Open Accordion](assets/images/read-me/accordion-open.png)
+    </div>
 
 3. ##### Interactive table of market rates
 
-   - Using [CoinDesk API](https://www.coindesk.com/price/bitcoin) visitors can select checkboxes next to their required currencies and display the current rates in a table. 
+   - Using [CoinDesk API](https://www.coindesk.com/price/bitcoin) visitors can select checkboxes next to their required currencies and display those current rates in a table. 
 
+    <div align="center">
      ![Country Code Checkboxes](assets/images/read-me/market-rates-checkboxes.png)
+    </div>
 
    - They can also click the 'Select All' button to display all currency rates in the table
 
+    <div align="center">
      ![Country Code Checkboxes](assets/images/read-me/market-rates-table.png)
+    </div>
 
-   - This feature gives the visitor complete control over the information they want to view
+   - This feature gives the visitor complete control over the range of information they want to view
 
 4. ##### Updating chart of Bitcoin from the past month
 
-   - Using [CoinDesk API](https://www.coindesk.com/price/bitcoin) visitors can see an updating chart of the last 31 days of the price of Bitcoin
+   - Using [CoinDesk API](https://www.coindesk.com/price/bitcoin) visitors can see an updating chart of the last 31 days of the price of Bitcoin.
 
-   - This allows them to easily see how Bitcoin is trending and it's current price as it relates to the price on a particular day in the last month.
+   - This allows them to easily see how Bitcoin is trending and its current price as it relates to the price on a particular day in the last month.
 
    - As this chart is updating daily, it remains a useful resource that visitors can come back to.
 
+    <div align="center">
      ![Country Code Checkboxes](assets/images/read-me/chart.png)
+    </div>
 
-5. ##### Updating  Bitcoin news articles
+5. ##### Updating Bitcoin news articles
 
-   - Using [Messari.io API](https://messari.io/) visitors can click the title links to see current news articles for Bitcoin.
+   - Using [Messari.io API](https://messari.io/) visitors can click the title links to see the current news articles for Bitcoin.
 
    - The articles are updating regularly, which gives visitors a reason to return to the site.
 
+    <div align="center">
      ![News Articles](assets/images/read-me/news-image.png)
+    </div>
 
 6. ##### Email success/error modal
 
@@ -181,27 +199,31 @@ As there are only a few elements on each page, the hover effect on the buttons d
 
    - If the form is filled out incorrectly, feedback is given in an error modal so that the visitor can amend the details.
 
+    <div align="center">
      ![Error Modal](assets/images/read-me/error-modal.png)
+    </div>
 
-   - When the email has been sent successfully, feedback is given in a success modal so that the visitor knows the message was sent.
+   - When the email has been sent successfully, feedback is given in a success modal so that the visitor knows that the message was sent.
 
+    <div align="center">
      ![Success Modal](assets/images/read-me/success-modal.png)
+    </div>
 
-#### [Features Left To Implement](#featuresLeft)
+#### Features Left To Implement
 
 1. ##### Calculator
-
    - Currently the Market Rates page shows the current price of 1 Bitcoin in a particular currency. In future a calculator feature that would allow visitors to see the price of any amount of Bitcoin in their chosen currency would be a useful tool. For example, a visitor could find out how much $50 is worth in Bitcoin and what the price of 3 Bitcoin is in Dollars.
 
 2. ##### Current price of Bitcoin on every page
-
    - It would be useful for visitors to be able to instantly see the current price of Bitcoin on every page, rather than having to go to the Market Rates page. 
 
 3. ##### Charts of different time spans
-
    - Having the ability to see how the price of Bitcoin has changed over a range of time spans i.e. 24 hours, 7 days, 1 year would give the visitor a more informed view of Bitcoin overall. 
 
-## [Technologies Used](#technologies)
+4. ##### More detailed instructions on how to buy Bitcoin
+   - Buying Bitcoin can be intimidating for a beginner so having step by step instructions on buying bitcoin would be a very useful tool to implement in future, that a person can refer back to if they are unsure at any point during the buying process.
+
+## Technologies Used
 
 This project utilises HTML, CSS and JavaScript programming languages.
 
@@ -220,15 +242,15 @@ This project utilises HTML, CSS and JavaScript programming languages.
 - [AutoPrefixer](https://autoprefixer.github.io/)
   - This project used **AutoPrefixer** to ensure that all the CSS prefixes were the most current version.
 
-## [Testing](#testing)
+## Testing
 
-Details on Testing can be found in the separate [testing.md] file
+Details on Testing can be found in the separate [testing.md](testing.md) file
 
-## [Deployment](#deploy)
+## Deployment
 
 This project was developed using [Gitpod](https://www.gitpod.io/) and pushed to [GitHub](https://github.com/)
 
-#### [GitHub Pages](#githubpages)
+#### GitHub Pages
 
 To deploy Bitcoin Basics to [GitHub Pages](https://pages.github.com/). The procedure is outlined below:
 
@@ -252,12 +274,12 @@ repository. To do this:
 3. Above the "Settings" Button on the menu, on the right-hand side locate the "Fork" Button. It is next to the 'star' button.
 4. You should now have a copy of the original repository in your GitHub account.
 
-#### Run This Project Locally
+#### How to run this project locally
 
 To clone Bitcoin Basics from GitHub:
 
 1. Go to [Github](https://github.com/) and log in.
-2. Locate a repository - follow this link for the [Bitcoin Basics Repository](https://github.com/shoreenb/bitcoin-basics)
+2. Locate the repository - follow this link for the [Bitcoin Basics Repository](https://github.com/shoreenb/bitcoin-basics)
 3. Under the repository name, click the green "Clone or download" button.
 4. To clone the repository using HTTPS, copy the link under "Clone with HTTPS".
 5. Open a terminal and if you need to, change the current working directory to the location where you want the cloned directory to be made.
@@ -269,9 +291,9 @@ To clone Bitcoin Basics from GitHub:
 
 Further information and troubleshooting on cloning a repository from Github can be found on [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-## [Credits](#credit)
+## Credits
 
-### [Content](#content)
+### Content
 
 All of the text written in this project has been written by the developer. 
 
@@ -281,7 +303,7 @@ Information for the Get Started guide on Bitcoin obtained from:
 - [Andreas M. Antonopoulos](https://aantonop.com/workshops/introduction-to-bitcoin-and-open-blockchains/)
 - [CoinFloor](https://coinfloor.co.uk/)
 
-#### [Media](#media)
+#### Media
 
 ##### Images
 - The Bitcoin Basics logo was created using [Canva](https://www.canva.com/)
@@ -291,22 +313,36 @@ Information for the Get Started guide on Bitcoin obtained from:
 - The Bitcoin Standard book image was obtained from [Saifedean Ammous](https://saifedean.com/)
 - The image of the old man yelling at bitcoin was sourced from [Money Morning](https://www.moneymorning.com.au/20180126/tiny-region-now-crypto-leader.html)
 
-#### [Code](#code)
+#### Code
 The API's used in this project were:
-- [CoinDesk](https://www.coindesk.com/price/bitcoin) used for the current market rates and the chart of the price of Bitcoin over the last 31 days.
+- [CoinDesk](https://www.coindesk.com/price/bitcoin) used for the current market rates and the data in the chart of the price of Bitcoin over the last 31 days.
 - [Messari](https://messari.io) used for the current news articles on Bitcoin.
 
 The following YouTube Tutorials assisted me in writing code: 
-
 - 5 Ways to Center with CSS! by [Marc Hinton](https://www.youtube.com/watch?v=PaiH9DLzaeU&t)
 - A Landing Page Tutorial by [Innovation Teach](https://www.youtube.com/watch?v=UoHfXQEWCHc&t=2s)
 - Easy sticky Footer by [Kevin Powell](https://www.youtube.com/watch?v=yc2olxLgKLk)
 - JavaScript Fetch API: Interacting With The News API by [Conor Bailey](https://www.youtube.com/watch?v=fOSGazKFRYE&t=1105s)
+- How to create an accordion by [Easy Tutorials](https://www.youtube.com/watch?v=t5pJ-SYCZa0&t=2s)
 
-#### [Acknowledgements](#acknowledge)
+- Code for pushing the API data to the checkboxes was based on the information from this [StackOverflow post](https://stackoverflow.com/questions/8563240/how-to-get-all-checked-checkboxes/8563293#8563293).
+- Code converting the API object into a string from [W3Schools](https://www.w3schools.com/js/js_json_stringify.asp)
 
+#### Acknowledgements
 
+Sincere thanks to:
 
+- Mentor Gerard Mcbride who's experienced advice and explainations enabled this developer to overcome the many hurdles that arose during the course of this project.
+- The many Code Institute Tutors who gave their time to help this developer move forward in this project with expert source knowledge.
+- Mr B, who offered his knowledge of Bitcoin, being the person many go to asking the questions that formed the foundation of this project.
+
+#### Releases
+
+No releases published
+
+#### Packages
+
+No packages published
 
 
 
