@@ -1,15 +1,19 @@
+
 <h1 align="center">
 <a href="https://shoreenb.github.io/bitcoin-basics/" target="_blank"><img src="assets/images/bitcoin-basics-lg.jpg" alt="Bitcoin Basics Logo"/></a>
 </h1>
-<p align="center">
-## [An introduction to Bitcoin for beginners](https://shoreenb.github.io/bitcoin-basics/)
-</p>
+
+<h2 align="center">An introduction to Bitcoin for beginners</h2>
+
 <div align="center">
+
 [Bitcoin Basics](https://shoreenb.github.io/bitcoin-basics/) is an informative website, devised for those who want to learn about this new (and often overwhelming) technology. Features include: a beginners guide demystifying Bitcoin,  current market rates and a clean, minimalist design that enables a newcomer to easily navigate the pages.
+<br>
 
 ![Mock Up Image](assets/images/read-me/mockup.png)
 
 [Visit the Bitcoin Basics page](https://shoreenb.github.io/bitcoin-basics/)
+
 </div>
 
 ## Table of Contents
@@ -51,7 +55,7 @@ The main goal of Bitcoin Basic is to provide information about Bitcoin that is e
 The target audience for this website is a user that is not necessarily technical, who has recently heard about Bitcoin and wants:
 
 - To know more about what it is and how to start using it.
-- To know the initial steps to take when first using bitcoin.
+- To know the initial steps to take when first buying bitcoin.
 - Clear visuals that don't confuse or overwhelm the visitor.
 - Intuitive page layout and navigation.
 - To know where they can find further reading and more in-depth information.
@@ -97,9 +101,7 @@ This contrasted well against black and white and added enough interest to the de
 
 #### Font
 
-<div align="center">
 ![Roboto Font](assets/images/read-me/roboto-font.png)
-</div>
 
 The font chosen was Roboto because it has a clean, modern type that would go well with the minimalist theme.
 
@@ -129,9 +131,7 @@ The following wireframes were created on the skeleton plane as part of the plann
 
    - On arrival at the site, the visitor will see a group of 6 navigation buttons, which are in place of the navbar. The width of the buttons are responsive, and will adapt to the screen size you are using. 
     
-    <div align="center">
    ![Home page Layout](assets/images/read-me/home-page.png)
-    </div>
 
    - From the home page you can choose to go to the beginners guide or directly check the market price, monthly Bitcoin chart, the latest news or go to an exchange to buy Bitcoin if you are not a beginner.
 
@@ -139,31 +139,23 @@ The following wireframes were created on the skeleton plane as part of the plann
 
    - The accordion component allows the information in the guide to be displayed whilst keeping the layout clutter free.
 
-    <div align="center">
      ![Closed Accordion](assets/images/read-me/accordion-closed.png)
-    </div>
 
    - This feature also allows the visitor to go straight to a particular part of the guide rather than being forced to read it all.
 
    - The background colour of the open section makes it clear that section is open.
 
-    <div align="center">
-     ![Open Accordion](assets/images/read-me/accordion-open.png)
-    </div>
+    ![Open Accordion](assets/images/read-me/accordion-open.png)
 
 3. #### Interactive table of market rates
 
    - Using [CoinDesk API](https://www.coindesk.com/price/bitcoin) visitors can select checkboxes next to their required currencies and display those current rates in a table. 
 
-    <div align="center">
-     ![Country Code Checkboxes](assets/images/read-me/market-rates-checkboxes.png)
-    </div>
+    ![Country Code Checkboxes](assets/images/read-me/market-rates-checkboxes.png)
 
    - They can also click the 'Select All' button to display all currency rates in the table
 
-    <div align="center">
-     ![Country Code Checkboxes](assets/images/read-me/market-rates-table.png)
-    </div>
+    ![Country Code Checkboxes](assets/images/read-me/market-rates-table.png)
 
    - This feature gives the visitor complete control over the range of information they want to view
 
@@ -175,9 +167,7 @@ The following wireframes were created on the skeleton plane as part of the plann
 
    - As this chart is updating daily, it remains a useful resource that visitors can come back to.
 
-    <div align="center">
-     ![Country Code Checkboxes](assets/images/read-me/chart.png)
-    </div>
+    ![Country Code Checkboxes](assets/images/read-me/chart.png)
 
 5. #### Updating Bitcoin news articles
 
@@ -185,9 +175,7 @@ The following wireframes were created on the skeleton plane as part of the plann
 
    - The articles are updating regularly, which gives visitors a reason to return to the site.
 
-    <div align="center">
-     ![News Articles](assets/images/read-me/news-image.png)
-    </div>
+    ![News Articles](assets/images/read-me/news-image.png)
 
 6. #### Email success/error modal
 
@@ -195,15 +183,12 @@ The following wireframes were created on the skeleton plane as part of the plann
 
    - If the form is filled out incorrectly, feedback is given in an error modal so that the visitor can amend the details.
 
-    <div align="center">
-     ![Error Modal](assets/images/read-me/error-modal.png)
-    </div>
+    
+    ![Error Modal](assets/images/read-me/error-modal.png)
 
    - When the email has been sent successfully, feedback is given in a success modal so that the visitor knows that the message was sent.
 
-    <div align="center">
-     ![Success Modal](assets/images/read-me/success-modal.png)
-    </div>
+   ![Success Modal](assets/images/read-me/success-modal.png)
 
 ### Features Left To Implement
 
@@ -294,7 +279,7 @@ Further information and troubleshooting on cloning a repository from Github can 
 All of the text written in this project has been written by the developer. 
 
 Information for the Get Started guide on Bitcoin obtained from:
-- [The Bitcoin white-paper](https://bitcoin.org/bitcoin.pdf)
+- [Satoshi Nakamoto](https://bitcoin.org/bitcoin.pdf)
 - [Bitcoin.com](https://www.bitcoin.com/get-started/a-quick-introduction-to-bitcoin/)
 - [Andreas M. Antonopoulos](https://aantonop.com/workshops/introduction-to-bitcoin-and-open-blockchains/)
 - [CoinFloor](https://coinfloor.co.uk/)
@@ -339,10 +324,3 @@ No releases published
 #### Packages
 
 No packages published
-
-
-
-
-
-
-

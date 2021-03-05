@@ -98,7 +98,7 @@ This section is a detailed account of all the manual testing that has been done 
 
 The following steps were repeated using Chrome, Firefox and Internet Explorer and on two different screen sizes:
 
-##### All Pages:
+#### All Pages:
 
 - Clicked on the logo to confirm it goes back to the home page
 - Confirmed that the navbar links (apart from the link for the current page - the active link) changed colour when hovered over
@@ -106,7 +106,7 @@ The following steps were repeated using Chrome, Firefox and Internet Explorer an
 - Checked that the background colour changes when hovering over the footer social links
 - Checked that each social icon opens in a new page when clicked
 
-##### Individual Pages:
+#### Individual Pages:
 
 1. Home Page
 
@@ -188,7 +188,7 @@ The following steps were repeated using Chrome, Firefox and Internet Explorer an
 
 The following steps were repeated on physical devices available to the developer: Oppo X2 Lite, Motorola G8, Samsung and 2 different sized tablets, as well as all the simulated devices and responsive options on the Chrome Developer Tools:
 
-##### All Pages:
+#### All Pages:
 
 - Checked the size and placement of the logo on all device screen sizes
 - Confirmed that font size is legible on all screen sizes, especially small and medium screens
@@ -196,33 +196,33 @@ The following steps were repeated on physical devices available to the developer
 - Checked that the content at least fills the height of the screen with the footer at the bottom
 - Checked that buttons and fields are large enough to click but still fit on the screen comfortably
 
-##### Individual Pages:
+#### Individual Pages:
 
- 	1. Home Page
-     - Checked that everything is displayed centrally and fits within the height of the screen.
-     - Checked that the buttons are not cut off, squashed or overlapping the footer especially on screens with a width below 992px 
+1. Home Page
+- Checked that everything is displayed centrally and fits within the height of the screen.
+- Checked that the buttons are not cut off, squashed or overlapping the footer especially on screens with a width below 992px 
 
- 	2. Get Started
-     - Checked that the accordion fills the width of the screen (up to min-width 768px) or the accordion and image are displayed in 2 columns.
-     - Checked that the pagination buttons are stacked and do not overlap the image or footer
+2. Get Started
+- Checked that the accordion fills the width of the screen (up to min-width 768px) or the accordion and image are displayed in 2 columns.
+- Checked that the pagination buttons are stacked and do not overlap the image or footer
 
- 	3. Market Rates
-     - Checked that the titles, checkboxes, table and buttons are displayed centrally
-     - Checked that the pagination buttons are stacked and do not overlap the table or footer
+3. Market Rates
+- Checked that the titles, checkboxes, table and buttons are displayed centrally
+- Checked that the pagination buttons are stacked and do not overlap the table or footer
 
- 	4. Charts
-     - Checked that the chart fills the width of the screen
-     - Checked that the pagination buttons are stacked and do not overlap the chart or footer
+4. Charts
+- Checked that the chart fills the width of the screen
+- Checked that the pagination buttons are stacked and do not overlap the chart or footer
 
- 	5. News
-     - Checked that the title, text and image are central
-     - Checked that the news article titles fit within the width of the page
-     - Checked that the pagination buttons are stacked and do not overlap the article titles or footer
+5. News
+- Checked that the title, text and image are central
+- Checked that the news article titles fit within the width of the page
+- Checked that the pagination buttons are stacked and do not overlap the article titles or footer
 
- 	6. Contact Us
-     - Checked that the title, text and form are central
-     - Checked that the form fits within the width of the page
-     - Checked that the 'Back' button does not overlap the 'Send' button or footer
+6. Contact Us
+- Checked that the title, text and form are central
+- Checked that the form fits within the width of the page
+- Checked that the 'Back' button does not overlap the 'Send' button or footer
 
 ## Bugs
 
@@ -247,4 +247,4 @@ The following steps were repeated on physical devices available to the developer
 
 - The style for the news articles coming from the [Messari API](https://messari.io) would not be altered using CSS. 
     -Fix:
-  - Add `a.style.color = 'black';` into the news.js JavaScript function to change the text colour from blue to black.
+    Add `a.style.color = 'black';` into the news.js JavaScript function to change the text colour from blue to black.
