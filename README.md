@@ -1,9 +1,9 @@
 <h1 align="center">
 <a href="https://shoreenb.github.io/bitcoin-basics/" target="_blank"><img src="assets/images/bitcoin-basics-lg.jpg" alt="Bitcoin Basics Logo"/></a>
 </h1>
-<h2 align="center">
-[An introduction to Bitcoin for beginners](https://shoreenb.github.io/bitcoin-basics/)
-</h2>
+<p align="center">
+## [An introduction to Bitcoin for beginners](https://shoreenb.github.io/bitcoin-basics/)
+</p>
 <div align="center">
 [Bitcoin Basics](https://shoreenb.github.io/bitcoin-basics/) is an informative website, devised for those who want to learn about this new (and often overwhelming) technology. Features include: a beginners guide demystifying Bitcoin,  current market rates and a clean, minimalist design that enables a newcomer to easily navigate the pages.
 
