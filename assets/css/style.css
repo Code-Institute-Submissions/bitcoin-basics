@@ -156,10 +156,6 @@ footer {
     margin-top: auto;
 }
 
-.footer-padding {
-    padding: 60px;
-}
-
 .social ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,7 +249,7 @@ footer {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .homeHeader.container {
@@ -302,16 +298,7 @@ footer {
 }
 
 #pgButtons {
-    position: absolute;
-    left: 45%;
-    right: 0;
-    -webkit-transform: translate(-40%);
-    -ms-transform: translate(-40%);
-    transform: translate(-40%);
-    z-index: 9999;
-    -webkit-transition: 2s ease;
-    -o-transition: 2s ease;
-    transition: 2s ease;
+    position: inherit;
 }
 
 .pgButtonItem {
@@ -328,6 +315,14 @@ footer {
     border-radius: 20px;
     background-color: rgb(255, 153, 0);
     font-size: 1rem;
+}
+
+.btn-block {
+    width: 60%;
+}
+
+.btn-link:focus {
+    box-shadow: none;
 }
 
 .pgButtonItem a {
@@ -698,15 +693,6 @@ footer {
         margin: 20px auto;
     }
 
-    .btn-group-lg>.btn,
-    .btn-lg {
-        padding: 2.2rem;
-    }
-
-    .btn-block {
-        width: 80%;
-    }
-
     .pgButtonItem {
         display: block;
         -webkit-box-pack: center;
@@ -817,15 +803,6 @@ footer {
         margin: 20px auto;
     }
 
-    .btn-group-lg>.btn,
-    .btn-lg {
-        padding: 2.2rem;
-    }
-
-    .btn-block {
-        width: 80%;
-    }
-
     .pgButtonItem {
         display: block;
         -webkit-box-pack: center;
@@ -848,6 +825,10 @@ footer {
         text-align: center;
         position: relative;
         margin: 10px 10px;
+    }
+
+    .btn-block {
+        width: 45%;
     }
 
     .social ul {
@@ -947,7 +928,7 @@ footer {
         }
 
         .btn-block {
-            width: 70%;
+            width: 35%;
         }
 
         .social ul {
