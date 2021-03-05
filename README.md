@@ -267,7 +267,7 @@ repository. To do this:
 
 1. Go to [Github](https://github.com/) and log in.
 2. Locate a repository - follow this link for the [Bitcoin Basics Repository](https://github.com/shoreenb/bitcoin-basics))
-3. Above the "Settings" Button on the menu, on the right-hand side locate the "Fork" Button. It is next to the 'star' button.
+3. Above the **Settings** Button on the menu, on the right-hand side locate the **Fork** Button. It is next to the **star** button.
 4. You should now have a copy of the original repository in your GitHub account.
 
 #### How to run this project locally
@@ -276,8 +276,8 @@ To clone Bitcoin Basics from GitHub:
 
 1. Go to [Github](https://github.com/) and log in.
 2. Locate the repository - follow this link for the [Bitcoin Basics Repository](https://github.com/shoreenb/bitcoin-basics)
-3. Under the repository name, click the green "Clone or download" button.
-4. To clone the repository using HTTPS, copy the link under "Clone with HTTPS".
+3. Under the repository name, click the green **Clone or download** button.
+4. To clone the repository using HTTPS, copy the link under **Clone with HTTPS**.
 5. Open a terminal and if you need to, change the current working directory to the location where you want the cloned directory to be made.
 6. Type `git clone`, and then paste the URL you copied in Step 3 on GitHub.
 
@@ -294,7 +294,7 @@ Further information and troubleshooting on cloning a repository from Github can 
 All of the text written in this project has been written by the developer. 
 
 Information for the Get Started guide on Bitcoin obtained from:
-- The original [Bitcoin white-paper](https://bitcoin.org/bitcoin.pdf)
+- [The Bitcoin white-paper](https://bitcoin.org/bitcoin.pdf)
 - [Bitcoin.com](https://www.bitcoin.com/get-started/a-quick-introduction-to-bitcoin/)
 - [Andreas M. Antonopoulos](https://aantonop.com/workshops/introduction-to-bitcoin-and-open-blockchains/)
 - [CoinFloor](https://coinfloor.co.uk/)
@@ -304,7 +304,7 @@ Information for the Get Started guide on Bitcoin obtained from:
 #### Images
 - The Bitcoin Basics logo was created using [Canva](https://www.canva.com/)
 - The Bitcoin image used throughout the project was from [Logos-Marcas](https://logos-marcas.com/bitcoin-logo/) and [WikimediaImages](https://pixabay.com/users/wikimediaimages-1185597/) 
-- The image used in the 'What is Bitcoin' in the Get Started guide was sourced from 
+- The image used in the 'What is Bitcoin' in the Get Started guide was sourced from [Andreas M. Antonopoulos](https://aantonop.com/books/)
 - The images for 'The Internet of Money' books were also sourced from [Andreas M. Antonopoulos](https://aantonop.com/books/)
 - The Bitcoin Standard book image was obtained from [Saifedean Ammous](https://saifedean.com/)
 - The image of the old man yelling at bitcoin was sourced from [Money Morning](https://www.moneymorning.com.au/20180126/tiny-region-now-crypto-leader.html)
